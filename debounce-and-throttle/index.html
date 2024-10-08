@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="debounceContainer">
+        <div style="width:800px">
+            <b>
+                Debouncing is a programming technique used to control how often
+                a function is executed, particularly when the event triggering 
+                the function happens frequently in a short time span.
+            </b>
+
+            <p style="padding-top:20px">
+                In this example, we have a button that tracks two things when clicked:
+
+                Number of times the button is clicked: Each time the button is clicked, 
+                a counter increments to reflect the total number of times the button was pressed.<p>
+            </p>
+            <p>
+                Number of times the debounced function is executed: Debouncing ensures that only one 
+                function execution happens within a certain time period, even if the button is 
+                clicked multiple times in quick succession. 
+            </p>
+
+            <p>
+                The second counter tracks how many 
+                times the function is actually executed, ignoring the rapid clicks that occur within 
+                the debounce delay.
+            </p>
+
+                
+            <p>
+                How it works:
+                Every click increments the clickCount counter.
+                However, if clicks happen too frequently (within the debounce delay), 
+                they won't trigger the function immediately. Only after the user pauses 
+                clicking for a specific delay does the function execute, incrementing 
+                the debounceCount.
+            </p>
+
+            
+        </div>
+        <button id="debounceButton">Debounce Button</button>
+        <div id="clickCount"></div>
+        <div id="debounceCount"></div>
+    </div>
+
+    <div class="throttleContainer">
+        <div style="width:800px">
+            Throttling is a technique used to limit the execution
+            of a function to once every specified interval, 
+            regardless of how often the event is triggered. 
+
+            <p>In this example, we have a button that tracks two things when clicked:</p>
+            
+            <p>
+                Number of times the button is clicked: This counter increments each time the button is pressed, 
+                reflecting the total number of user clicks.
+            </p>
+                
+            <p>
+                Number of times the throttled function is executed: Throttling ensures that the function is executed 
+                once after a specified time interval, regardless of how many times the button is 
+                clicked during that interval.
+            </p>    
+        </div>
+
+        <button id="throttleButton">Throttle Button</button>
+        <div id="throttleButtonPressed"></div>
+        <div id="throttleActionTriggered"></div>
+    </div>
+
+</body>
+</html>
