@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Event Bubbling -->
+    <h3>Event Bubbling</h3>
+    <div class="parent-div">Parent Div
+        <div class="child-div"> Child Div
+            <button class="button">Click me</button>
+        </div>
+    </div>
+
+    <!-- Event Trickling/Capturing -->
+    <h3>Event Trickling</h3>
+    <div class="parent-div-1">Parent Div
+        <div class="child-div-1"> Child Div
+            <button class="button-1">Click me</button>
+        </div>
+    </div>
+
+    <!-- Event.target Vs Event.CurrentTarget Vs this.TagName -->
+    <h3>Event.target Vs Event.CurrentTarget Vs this.TagName</h3>
+    <div class="parent-div-11">Parent Div
+        <div class="child-div-11"> Child Div
+            <button class="button-11">Click me</button>
+        </div>
+    </div>
+
+    <!-- Stop Bubbling the event -->
+    <h3>Stop Bubbling The Event</h3>
+    <div class="parent-div-12">Parent Div
+        <div class="child-div-12"> Child Div
+            <button class="button-12">Click me</button>
+        </div>
+    </div>
+
+
+    <h3>Event Delegation</h3>
+    Parent Container
+    <div class="parent-container">
+        <div class="product-1" style="cursor:pointer">Product 1</div>
+        <div class="product-2" style="cursor:pointer">Product 2</div>
+        <div class="product-3" style="cursor:pointer">Product 3</div>
+        <div class="product-4" style="cursor:pointer">Product 4</div>
+        <div class="product-5" style="cursor:pointer">Product 5</div>
+    </div>
+
+
+    <button class="modal-btn">Open Modal</button>
+    <div class="modal" style="border:2px solid green">
+        <div class="modal-container">
+            <div>Inside the Modal</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.parent-div, .child-div, .parent-div-1,
+.child-div-1, .parent-div-11, .child-div-11,
+.parent-div-12, .child-div-12 { 
+    padding: 20px;
+}
+
+.parent-div, .parent-div-1, 
+.parent-div-11, .parent-div-12 {
+    border: 2px solid black;
+}
+
+.child-div, .child-div-1, 
+.child-div-11, .child-div-12 {
+    border: 2px solid red;
+}
+
+.button, .button-1, 
+.button-11, .button-12 {
+    border: 2px solid green;
+}
+
+.parent-container {
+    border: 2px solid green
+}
+
+/* Modal Container */
+.modal-container {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: none; 
+    position: relative;
+    margin: auto;
+}
+
