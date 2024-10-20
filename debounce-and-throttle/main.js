@@ -16,7 +16,7 @@ let debounceBtnPressedCount = 0;
 let debounceBtnTriggerCount = 0;
 
 DEBOUNCE_BUTTON.addEventListener('click', () => {
-    DEBOUNCE_BUTTON_PRESSED.innerHTML = `Debounce Button Pressed ${++debounceBtnPressedCount} Times`;
+    DEBOUNCE_BUTTON_PRESSED.innerHTML = `Button Pressed ${++debounceBtnPressedCount} Times`;
     debounceCount();
 })
 
@@ -55,7 +55,7 @@ let throttleBtnClickCount = 0;
 let throttleBtnTriggerCount = 0;
 
 THROTTLE_BUTTON.addEventListener('click', () => {
-    THROTTLE_BUTTON_PRESSED.innerHTML = `Throttle Button Pressed ${++throttleBtnClickCount} Times`;
+    THROTTLE_BUTTON_PRESSED.innerHTML = `Button Pressed ${++throttleBtnClickCount} Times`;
     callThrottleCount();
 })
 
